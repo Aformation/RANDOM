@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="homework.css">
+</head>
+<body class="grid"> 
+    <header class="header">
+        <div class="logo">
+            <h1 class="logo"><a href="index.html">Angel<span>Kolev</span></a></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">About Me</a></li>
+                <li><a href="homework.html">Homework</a></li>
+                <li><a href="index.html">Portfolio</a></li>
+                <li><a href="index.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="main">
+        <div class="card-items-wrapper">
+            <div class="card-item-wrapper">
+                <div class="card-img-background"></div>
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="/html.png" alt="">
+                    </div>
+                    <div class="subtitle">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, eum.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-item-wrapper">
+                <div class="card-img-background"></div>
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="/css.png" alt="">
+                    </div>
+                    <div class="subtitle">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, eum.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-item-wrapper">
+                <div class="card-img-background"></div>
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="/javascript.png" alt="">
+                    </div>
+                    <div class="subtitle">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, eum.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-item-wrapper">
+                <div class="card-img-background"></div>
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="/Jquery.png" alt="">
+                    </div>
+                    <div class="subtitle">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, eum.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-item-wrapper">
+                <div class="card-img-background"></div>
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="/react.png" alt="">
+                    </div>
+                    <div class="subtitle">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, eum.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-item-wrapper">
+                <div class="card-img-background"></div>
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="/p5js.png" alt="">
+                    </div>
+                    <div class="subtitle">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, eum.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-item-wrapper">
+                <div class="card-img-background"></div>
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="vs.png" alt="">
+                    </div>
+                    <div class="subtitle">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, eum.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-item-wrapper">
+                <div class="card-img-background"></div>
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="sass.png" alt="">
+                    </div>
+                    <div class="subtitle">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, eum.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-item-wrapper">
+                <div class="card-img-background"></div>
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="gh.png" alt="">
+                    </div>
+                    <div class="subtitle">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, eum.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="aside">
+    </section>
+    <footer class="footer">
+    </footer>
+</body>
+<script>
+    const portfolioItems = document.querySelectorAll('.card-item-wrapper');
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover', () => {
+        console.log(portfolioItem.childNodes[1].classList)
+        portfolioItem.childNodes[1].classList.add('image-blur');
+        });
+        portfolioItem.addEventListener('mouseout', () => {
+        console.log(portfolioItem.childNodes[1].classList)
+        portfolioItem.childNodes[1].classList.remove('image-blur');
+        });
+    });
+</script>
+</html>
